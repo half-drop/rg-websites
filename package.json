@@ -1,0 +1,7 @@
+{
+  "name": "rg-websites",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": { "build:pages": "node scripts/build-pages.mjs" }
+}

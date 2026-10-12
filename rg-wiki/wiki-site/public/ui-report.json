@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-09-05T09:21:42.912Z",
+  "outcomes": [
+    {
+      "name": "item",
+      "status": [
+        "像素挤出模型 · 0 个绘制批次"
+      ],
+      "alerts": [
+        "此显示状态是空模型；可切换状态或分支。"
+      ]
+    },
+    {
+      "name": "glass",
+      "status": [
+        "5 个元素 · 12 个绘制批次"
+      ],
+      "alerts": []
+    },
+    {
+      "name": "leaves",
+      "status": [
+        "13 个元素 · 6 个绘制批次"
+      ],
+      "alerts": []
+    },
+    {
+      "name": "template",
+      "status": [
+        "13 个元素 · 6 个绘制批次"
+      ],
+      "alerts": [
+        "这是父模型模板，原文件不指定完整纹理。此处使用实例 minecraft:block/acacia_leaves1 的纹理展示模板几何。"
+      ]
+    },
+    {
+      "name": "compass",
+      "status": [
+        "5 个元素 · 4 个绘制批次"
+      ],
+      "alerts": []
+    },
+    {
+      "name": "animation",
+      "status": [
+        "像素挤出模型 · 4 个绘制批次 · 1 个动画纹理"
+      ],
+      "alerts": []
+    },
+    {
+      "name": "missing",
+      "status": [
+        "8 个元素 · 4 个绘制批次"
+      ],
+      "alerts": [
+        "原包缺失纹理 hypixel_ravengard:item/decoration/carts/stalls/market_stall_fish；棋盘格仅标记缺失位置，无法还原原始贴图。"
+      ]
+    }
+  ],
+  "errors": [],
+  "mobileOverflow": false
+}

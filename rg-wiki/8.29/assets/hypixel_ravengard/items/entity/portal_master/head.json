@@ -1,0 +1,1 @@
+{"model":{"models":[{"type":"model","model":"hypixel_ravengard:entity/portal_master/head","tints":[{"type":"minecraft:dye","default":16777215}]},{"type":"model","model":"hypixel_ravengard:entity/portal_master/head/1","tints":[{"type":"minecraft:dye","default":16777215}]}],"parent":"item/generated","type":"minecraft:composite"}}

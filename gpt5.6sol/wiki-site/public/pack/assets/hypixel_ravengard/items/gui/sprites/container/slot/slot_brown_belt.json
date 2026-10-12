@@ -1,0 +1,1 @@
+{"model":{"type":"condition","property":"carried","on_false":{"type":"model","model":"hypixel_ravengard:gui/sprites/container/slot/slot_brown_belt"},"on_true":{"type":"empty"}}}

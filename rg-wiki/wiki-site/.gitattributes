@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+public/pack/** -text
+public/vanilla/** -text
+public/thumbnails/** -text

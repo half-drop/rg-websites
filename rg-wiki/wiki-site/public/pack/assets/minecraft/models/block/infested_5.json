@@ -1,0 +1,1 @@
+{"ambientocclusion":false,"textures":{"particle":"block/infested_5","texture":"block/infested_5"},"elements":[{"from":[0,0,0.1],"to":[16,16,0.1],"faces":{"north":{"uv":[16,0,0,16],"texture":"#texture"},"south":{"uv":[0,0,16,16],"texture":"#texture"}}}]}

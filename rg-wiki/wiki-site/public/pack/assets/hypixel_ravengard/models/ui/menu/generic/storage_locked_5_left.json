@@ -1,0 +1,1 @@
+{"textures":{"particle":"hypixel_ravengard:ui/menu/generic/storage_locked_5_left"},"elements":[{"from":[0,0,0],"to":[17.75,22.5,0],"faces":{"south":{"uv":[0,0,8.875,11.25],"texture":"#particle","tintindex":0}}}],"gui_light":"front","display":{"gui":{"scale":[4,4,4]}}}

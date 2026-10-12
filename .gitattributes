@@ -1,0 +1,16 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ogg binary
+*.mp3 binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+rg-wiki/8.29/** -text
+**/public/pack/** -text
+**/public/vanilla/** -text
+**/public/thumbnails/** -text

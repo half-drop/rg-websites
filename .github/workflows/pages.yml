@@ -1,0 +1,59 @@
+name: Deploy both websites to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: |
+            rg-wiki/wiki-site/package-lock.json
+            gpt5.6sol/wiki-site/package-lock.json
+      - uses: actions/configure-pages@v5
+      - name: Install rg-wiki dependencies
+        run: npm ci
+        working-directory: rg-wiki/wiki-site
+      - name: Install gpt5.6sol dependencies
+        run: npm ci
+        working-directory: gpt5.6sol/wiki-site
+      - name: Check rg-wiki types
+        run: npx tsc --noEmit
+        working-directory: rg-wiki/wiki-site
+      - name: Check gpt5.6sol types
+        run: npx tsc --noEmit
+        working-directory: gpt5.6sol/wiki-site
+      - name: Build both websites
+        run: npm run build:pages
+        env:
+          WIKI_SITE_ORIGIN: https://${{ github.repository_owner }}.github.io
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

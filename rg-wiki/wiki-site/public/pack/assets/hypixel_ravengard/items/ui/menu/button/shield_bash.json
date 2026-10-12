@@ -1,0 +1,1 @@
+{"model":{"type":"condition","property":"carried","on_false":{"type":"model","model":"hypixel_ravengard:ui/menu/button/shield_bash","tints":[{"type":"dye","default":0}]},"on_true":{"type":"model","model":"hypixel_ravengard:ui/menu/press/shield_bash","tints":[{"type":"dye","default":0}]}},"oversized_in_gui":true}
