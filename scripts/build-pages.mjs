@@ -28,5 +28,7 @@ for (const site of ['rg-wiki', 'gpt5.6sol']) {
 }
 
 await cp(path.join(root, 'pages', 'index.html'), path.join(output, 'index.html'));
+// Keep the YUNDI concept prototype isolated from the existing wiki sites.
+await cp(path.join(root, 'yundi'), path.join(output, 'yundi'), { recursive: true });
 await writeFile(path.join(output, '.nojekyll'), '');
-console.log(`Both websites are ready in ${output}`);
+console.log(`All websites are ready in ${output}`);
